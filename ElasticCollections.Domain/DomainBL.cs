@@ -9,6 +9,7 @@
             foreach (dynamic product in DataBase._products)
             {
                 Console.WriteLine($"{product.Id}, {product.Name}, {product.Quantity}, ${product.Price}, {product.Category}, {product.OrderCount}");
+                Console.WriteLine();
             }
         }
 
@@ -21,6 +22,7 @@
                 Console.WriteLine($"{((IDictionary<string, object>)product)[arg1]}, " +
                     $"{((IDictionary<string, object>)product)[arg2]}, " +
                     $"{((IDictionary<string, object>)product)[arg3]}");
+                Console.WriteLine();
             }
         }
     }

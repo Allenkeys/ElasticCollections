@@ -20,7 +20,7 @@ namespace ElasticCollections.Domain
             _products[1].Name = "Ergonomic Chair";
             _products[1].Quantity = 25;
             _products[1].Price = 1100.99;
-            _products[1].Category = "PCs";
+            _products[1].Category = "Chairs";
             _products[1].OrderCount = 357;
 
             _products.Add(new ExpandoObject());
@@ -28,7 +28,7 @@ namespace ElasticCollections.Domain
             _products[2].Name = "Oakwood Table";
             _products[2].Quantity = 30;
             _products[2].Price = 4000.99;
-            _products[2].Category = "PCs";
+            _products[2].Category = "Tables";
             _products[2].OrderCount = 368;
 
         }
