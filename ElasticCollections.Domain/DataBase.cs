@@ -4,8 +4,8 @@ namespace ElasticCollections.Domain
 {
     internal class DataBase
     {
-        public static dynamic _products = new List<dynamic>();
-        public static void ProductGenerator()
+        internal static dynamic _products = new List<dynamic>();
+        internal static void ProductGenerator()
         {
             _products.Add(new ExpandoObject());
             _products[0].Id = 1;
