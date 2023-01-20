@@ -7,9 +7,9 @@ namespace ElasticCollections.UI
     {
         static void Main(string[] args)
         {
-            DataBase db = new DataBase();
-            //db.Display();
-            db.Display("Name", "Price", "OrderCount");
+            DomainBL dbl = new();
+            dbl.Display();
+            dbl.Display("Name", "Price", "OrderCount");
         }
     }
 }

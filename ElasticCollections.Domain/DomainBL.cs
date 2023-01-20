@@ -1,13 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ElasticCollections.Domain
+﻿namespace ElasticCollections.Domain
 {
-    internal class DomainBL
+    public class DomainBL
     {
+        public void Display()
+        {
+            DataBase._products.Clear();
+            DataBase.ProductGenerator();
+            foreach (dynamic product in DataBase._products)
+            {
+                Console.WriteLine($"{product.Id}, {product.Name}, {product.Quantity}, ${product.Price}, {product.Category}, {product.OrderCount}");
+            }
+        }
 
+        public void Display(string arg1, string arg2, string arg3)
+        {
+            DataBase._products.Clear();
+            DataBase.ProductGenerator();
+            foreach (dynamic product in DataBase._products)
+            {
+                Console.WriteLine($"{((IDictionary<string, object>)product)[arg1]}, " +
+                    $"{((IDictionary<string, object>)product)[arg2]}, " +
+                    $"{((IDictionary<string, object>)product)[arg3]}");
+            }
+        }
     }
 }

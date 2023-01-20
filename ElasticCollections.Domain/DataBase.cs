@@ -2,7 +2,7 @@
 
 namespace ElasticCollections.Domain
 {
-    public class DataBase
+    internal class DataBase
     {
         public static dynamic _products = new List<dynamic>();
         public static void ProductGenerator()
