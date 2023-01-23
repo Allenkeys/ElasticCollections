@@ -8,8 +8,8 @@ namespace ElasticCollections.UI
         static void Main(string[] args)
         {
             DomainBL dbl = new();
+            dbl.Display("Name", "Price", "Quantity");
             dbl.Display();
-            dbl.Display("Name", "Price", "OrderCount");
         }
     }
 }
